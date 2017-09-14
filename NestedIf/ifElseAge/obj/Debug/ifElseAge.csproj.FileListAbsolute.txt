@@ -1,0 +1,6 @@
+C:\Users\mrlna\source\repos\ifElseAge\ifElseAge\obj\Debug\ifElseAge.csproj.CoreCompileInputs.cache
+C:\Users\mrlna\source\repos\ifElseAge\ifElseAge\bin\Debug\ifElseAge.exe.config
+C:\Users\mrlna\source\repos\ifElseAge\ifElseAge\bin\Debug\ifElseAge.exe
+C:\Users\mrlna\source\repos\ifElseAge\ifElseAge\bin\Debug\ifElseAge.pdb
+C:\Users\mrlna\source\repos\ifElseAge\ifElseAge\obj\Debug\ifElseAge.exe
+C:\Users\mrlna\source\repos\ifElseAge\ifElseAge\obj\Debug\ifElseAge.pdb

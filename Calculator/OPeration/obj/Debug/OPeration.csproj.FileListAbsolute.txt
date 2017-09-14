@@ -1,0 +1,7 @@
+C:\Users\mrlna\source\repos\OPeration\OPeration\obj\Debug\OPeration.csprojResolveAssemblyReference.cache
+C:\Users\mrlna\source\repos\OPeration\OPeration\obj\Debug\OPeration.csproj.CoreCompileInputs.cache
+C:\Users\mrlna\source\repos\OPeration\OPeration\bin\Debug\OPeration.exe.config
+C:\Users\mrlna\source\repos\OPeration\OPeration\bin\Debug\OPeration.exe
+C:\Users\mrlna\source\repos\OPeration\OPeration\bin\Debug\OPeration.pdb
+C:\Users\mrlna\source\repos\OPeration\OPeration\obj\Debug\OPeration.exe
+C:\Users\mrlna\source\repos\OPeration\OPeration\obj\Debug\OPeration.pdb

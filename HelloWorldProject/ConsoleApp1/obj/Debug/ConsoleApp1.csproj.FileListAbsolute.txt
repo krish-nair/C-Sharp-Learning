@@ -1,0 +1,14 @@
+C:\Users\mrlna\source\repos\HelloWorld\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+C:\Users\mrlna\source\repos\HelloWorld\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+C:\Users\mrlna\source\repos\HelloWorld\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+C:\Users\mrlna\source\repos\HelloWorld\ConsoleApp1\obj\Debug\ConsoleApp1.csprojResolveAssemblyReference.cache
+C:\Users\mrlna\source\repos\HelloWorld\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CoreCompileInputs.cache
+C:\Users\mrlna\source\repos\HelloWorld\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+C:\Users\mrlna\source\repos\HelloWorld\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
+E:\myProjects\C-Sharp-Learning\HelloWorldProject\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+E:\myProjects\C-Sharp-Learning\HelloWorldProject\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+E:\myProjects\C-Sharp-Learning\HelloWorldProject\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+E:\myProjects\C-Sharp-Learning\HelloWorldProject\ConsoleApp1\obj\Debug\ConsoleApp1.csprojResolveAssemblyReference.cache
+E:\myProjects\C-Sharp-Learning\HelloWorldProject\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CoreCompileInputs.cache
+E:\myProjects\C-Sharp-Learning\HelloWorldProject\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+E:\myProjects\C-Sharp-Learning\HelloWorldProject\ConsoleApp1\obj\Debug\ConsoleApp1.pdb

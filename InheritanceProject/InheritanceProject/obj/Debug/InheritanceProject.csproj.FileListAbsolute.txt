@@ -1,0 +1,7 @@
+C:\Users\mrlna\source\repos\InheritanceProject\InheritanceProject\bin\Debug\InheritanceProject.exe.config
+C:\Users\mrlna\source\repos\InheritanceProject\InheritanceProject\bin\Debug\InheritanceProject.exe
+C:\Users\mrlna\source\repos\InheritanceProject\InheritanceProject\bin\Debug\InheritanceProject.pdb
+C:\Users\mrlna\source\repos\InheritanceProject\InheritanceProject\obj\Debug\InheritanceProject.csprojResolveAssemblyReference.cache
+C:\Users\mrlna\source\repos\InheritanceProject\InheritanceProject\obj\Debug\InheritanceProject.csproj.CoreCompileInputs.cache
+C:\Users\mrlna\source\repos\InheritanceProject\InheritanceProject\obj\Debug\InheritanceProject.exe
+C:\Users\mrlna\source\repos\InheritanceProject\InheritanceProject\obj\Debug\InheritanceProject.pdb
