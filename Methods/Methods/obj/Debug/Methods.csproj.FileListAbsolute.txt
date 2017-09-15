@@ -5,3 +5,10 @@ C:\Users\mrlna\source\repos\Methods\Methods\obj\Debug\Methods.csprojResolveAssem
 C:\Users\mrlna\source\repos\Methods\Methods\obj\Debug\Methods.csproj.CoreCompileInputs.cache
 C:\Users\mrlna\source\repos\Methods\Methods\obj\Debug\Methods.exe
 C:\Users\mrlna\source\repos\Methods\Methods\obj\Debug\Methods.pdb
+E:\myProjects\C-Sharp-Learning\Methods\Methods\bin\Debug\Methods.exe.config
+E:\myProjects\C-Sharp-Learning\Methods\Methods\bin\Debug\Methods.exe
+E:\myProjects\C-Sharp-Learning\Methods\Methods\bin\Debug\Methods.pdb
+E:\myProjects\C-Sharp-Learning\Methods\Methods\obj\Debug\Methods.csprojResolveAssemblyReference.cache
+E:\myProjects\C-Sharp-Learning\Methods\Methods\obj\Debug\Methods.csproj.CoreCompileInputs.cache
+E:\myProjects\C-Sharp-Learning\Methods\Methods\obj\Debug\Methods.exe
+E:\myProjects\C-Sharp-Learning\Methods\Methods\obj\Debug\Methods.pdb
