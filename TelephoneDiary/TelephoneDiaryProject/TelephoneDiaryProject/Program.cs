@@ -4,7 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace LINQtoSQLProj
+
+namespace TelephoneDiaryProject
 {
     static class Program
     {
@@ -16,7 +17,7 @@ namespace LINQtoSQLProj
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form4());
+            Application.Run(new Phone());
         }
     }
 }
