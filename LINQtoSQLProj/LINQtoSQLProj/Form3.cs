@@ -12,40 +12,53 @@ namespace LINQtoSQLProj
 {
     public partial class Form3 : Form
     {
+        CompanyDBDataContext dc;
+
         public Form3()
         {
             InitializeComponent();
         }
+        private void LoadData()
+        {
+            dc = new CompanyDBDataContext();
+            dgView.DataSource = dc.Employees;
+        }
+
+        private void Form4_Load(object sender, EventArgs e)
+        {
+            LoadData();
+        }
+
+
 
         private void button1_Click(object sender, EventArgs e)
         {
-            CompanyDBDataContext dc = new CompanyDBDataContext();
-            Employee obj = new Employee();
-            obj.Eno = int.Parse(textBox1.Text);
-            obj.Ename = textBox2.Text;
-            obj.Role = textBox3.Text;
-            obj.Salary = decimal.Parse(textBox4.Text);
-            obj.Dname = textBox5.Text;
-            dc.Employees.InsertOnSubmit(obj);
-            dc.SubmitChanges();
-            MessageBox.Show("Record inserted into the table");
+            Form4 f = new Form4();
+            f.ShowDialog();
+            LoadData();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            foreach (Control ctrl in this.Controls)
+            if (dgView.SelectedRows.Count > 0)
             {
-                if (ctrl is TextBox)
-                {
-                    TextBox tb = ctrl as TextBox;
-                    tb.Clear();
-                }
+                Form4 f = new Form4();
+                f.textBox1.ReadOnly = true;
+                f.textBox1.Text = dgView.SelectedRows[0].Cells[0].Value.ToString();
+                f.textBox2.Text = dgView.SelectedRows[0].Cells[1].Value.ToString();
+                f.textBox3.Text = dgView.SelectedRows[0].Cells[2].Value.ToString();
+                f.textBox4.Text = dgView.SelectedRows[0].Cells[3].Value.ToString();
+                f.textBox5.Text = dgView.SelectedRows[0].Cells[4].Value.ToString();
+                f.ShowDialog();
             }
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            this.Close();
+            else
+                MessageBox.Show("Please select a row for the pdation", "Information", MessageBoxButtons.OK, 
+                    MessageBoxIcon.Information);
         }
     }
 }

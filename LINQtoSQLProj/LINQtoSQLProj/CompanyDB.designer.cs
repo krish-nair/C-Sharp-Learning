@@ -30,6 +30,9 @@ namespace LINQtoSQLProj
 		
     #region Extensibility Method Definitions
     partial void OnCreated();
+    partial void InsertEmployee(Employee instance);
+    partial void UpdateEmployee(Employee instance);
+    partial void DeleteEmployee(Employee instance);
     #endregion
 		
 		public CompanyDBDataContext() : 
@@ -72,8 +75,10 @@ namespace LINQtoSQLProj
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Employee")]
-	public partial class Employee
+	public partial class Employee : INotifyPropertyChanging, INotifyPropertyChanged
 	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
 		private int _Eno;
 		
@@ -85,11 +90,28 @@ namespace LINQtoSQLProj
 		
 		private string _Dname;
 		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnEnoChanging(int value);
+    partial void OnEnoChanged();
+    partial void OnEnameChanging(string value);
+    partial void OnEnameChanged();
+    partial void OnRoleChanging(string value);
+    partial void OnRoleChanged();
+    partial void OnSalaryChanging(decimal value);
+    partial void OnSalaryChanged();
+    partial void OnDnameChanging(string value);
+    partial void OnDnameChanged();
+    #endregion
+		
 		public Employee()
 		{
+			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Eno", DbType="Int NOT NULL")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Eno", DbType="Int NOT NULL", IsPrimaryKey=true)]
 		public int Eno
 		{
 			get
@@ -100,7 +122,11 @@ namespace LINQtoSQLProj
 			{
 				if ((this._Eno != value))
 				{
+					this.OnEnoChanging(value);
+					this.SendPropertyChanging();
 					this._Eno = value;
+					this.SendPropertyChanged("Eno");
+					this.OnEnoChanged();
 				}
 			}
 		}
@@ -116,7 +142,11 @@ namespace LINQtoSQLProj
 			{
 				if ((this._Ename != value))
 				{
+					this.OnEnameChanging(value);
+					this.SendPropertyChanging();
 					this._Ename = value;
+					this.SendPropertyChanged("Ename");
+					this.OnEnameChanged();
 				}
 			}
 		}
@@ -132,7 +162,11 @@ namespace LINQtoSQLProj
 			{
 				if ((this._Role != value))
 				{
+					this.OnRoleChanging(value);
+					this.SendPropertyChanging();
 					this._Role = value;
+					this.SendPropertyChanged("Role");
+					this.OnRoleChanged();
 				}
 			}
 		}
@@ -148,7 +182,11 @@ namespace LINQtoSQLProj
 			{
 				if ((this._Salary != value))
 				{
+					this.OnSalaryChanging(value);
+					this.SendPropertyChanging();
 					this._Salary = value;
+					this.SendPropertyChanged("Salary");
+					this.OnSalaryChanged();
 				}
 			}
 		}
@@ -164,8 +202,32 @@ namespace LINQtoSQLProj
 			{
 				if ((this._Dname != value))
 				{
+					this.OnDnameChanging(value);
+					this.SendPropertyChanging();
 					this._Dname = value;
+					this.SendPropertyChanged("Dname");
+					this.OnDnameChanged();
 				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
 		}
 	}
